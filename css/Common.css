@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+body{ color:#333; font:12px/14px "Microsoft yahei", arial; }
+a { color:#333; text-decoration:none; }
+ul{margin: 0;padding: 0}
+input{padding: 0;border: none;}
+
+/*常用样式*/
+.block1000{
+	width: 1000px;
+	margin: 0 auto;
+}
+@media (max-width:1000px) {
+	.block1000{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media (max-width:680px) {
+	.block1000{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+.floatL{
+	float: left;
+}
+.floatR{
+	float: right;
+}
+.clearfix{
+	overflow: auto;
+	zoom:1;
+}
+/*常用样式*/
+/*导航栏nav*/
+header{width: 100%;position: relative;top: 0}
+.topbar{height: 25px;background: #ccc}
+.loginbar a{font: normal 12px/25px "microsoft yahei";}
+.logo .logo-img{width: 100%;height: 100%;}
+.logo{width: 100px;height: 100px;border-radius: 50%;overflow: hidden;margin: 2%}
+@media (max-width: 480px) {
+}
+	.logo{
+		position: relative;
+	    left: -50px;
+	    margin: 1% auto 1% 50%;
+	}
+.top{background: #001F3F}
+/*搜索框*/
+.search{width: 250px;margin: 4em 2em 0 0;}
+@media (max-width: 480px) {
+	.search{
+		float: left;
+	    position: relative;
+	    left: -125px;
+	    margin: 2% auto 2% 50%;
+	}
+	
+}
+.search .search-input{height: 100%;width: 200px}
+.search .search-input input{
+	width: 100%;
+	height: 30px;
+	text-indent: 5px;
+	-webkit-outline:none;
+	-moz-outline:none;
+	-o-outline:none;
+	outline: none;
+}
+.search .search-btn button{width: 50px;border: none;background: #cdc;color: #fff;outline: none;height: 30px}
+/*搜索框*/
+header nav{width: margin: 0 auto;background: #555;line-height: 35px;}
+header nav #nav{display: flex}
+@media (max-width:680px) {
+	header nav #nav{display: flex;flex-wrap: wrap;}
+}
+header nav .nav-list1{float: left;width: 20%;text-align: center;position: relative;height: 35px;}
+header nav a{display: inline-block;width: 100%;height: 100%;color: #fff;}
+header nav .nav-dropdown{display:none;position: absolute;z-index: 200;width: 100%;background: rgba(95, 83, 83, 0.74);}
+header nav .nav-dropdown a:hover{background: #ccc}
+/*导航栏nav*/
+/*底部navbar*/
+footer{width: 100%;}
+.copyright{background: #233;height: 100%;padding: 10px 0}
+.copyright p{text-align: center;color: #fff}
+footer a{text-align:center;width: 20%;}
+footer a.active{background: #111}
+footer a p{color: #fff}
+/*底部navbar*/
+/*内容*/
+#wrap{
+	width: 100%;
+	max-width: 680px;
+	margin: 0 auto;
+}
+/*内容*/
